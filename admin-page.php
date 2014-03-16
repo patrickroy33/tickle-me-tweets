@@ -43,9 +43,25 @@ function twitter_system_page() {
     </style>
     <div class="wrap">
         <h2>Twitter Shortcodes and Widgets Settings</h2>
-        <p>
-            
-        </p>
+        <h3>Create Twitter Application</h3>
+        <ol>
+            <li>Log in to <a href="https://twitter.com/login?redirect_after_login=https%3A//apps.twitter.com/" target="_blank">Twitter Application</a> using an existing Twitter Account</li>
+            <li>Once logged in, "Create New App"</li>
+            <li>Setup the application with a Name, Description and Website</li>
+            <li>Agree to the "Rules of the Road" and "Create you Twitter Application"</li>
+            <li>Once Application is created, click on the "API Keys"</li>
+            <li>Use "Create my access token" to create new access tokens</li>
+            <li>
+                Use the following information from this page and place below:
+                <ul style="margin-top:5px;">
+                    <li>Consumer Key</li>
+                    <li>Consumer Secret</li>
+                    <li>Access Token</li>
+                    <li>Access Token Secret</li>
+                </ul>
+            </li>
+        </ol>
+        <br /><br />
         <form method="post" action="options.php">
             <?php settings_fields( 'twitter-settings-group' ); ?>
             <?php do_settings_sections( 'twitter-settings-group' ); ?>
